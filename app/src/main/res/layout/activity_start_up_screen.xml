@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Racing Game"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <!-- Logo or Image -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/konnigseg"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_below="@id/logoImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_below="@id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tutorialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Racing Game!\n\nHow to Play:\n- Swipe left/right to move the car.\n- Avoid obstacles.\n- Stay on the road to score more!"
+        android:textColor="#FFFF00"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/exitButton"
+        android:gravity="center"
+        android:padding="20dp" />
+</RelativeLayout>

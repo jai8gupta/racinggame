@@ -1,0 +1,20 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.racinggame.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#FFFF00"
+        android:textSize="24sp"
+        android:background="#AA000000"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</FrameLayout>
